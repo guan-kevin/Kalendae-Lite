@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A8041A7276085BF006844D7 /* Kalendae Lite WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A8041A6276085BF006844D7 /* Kalendae Lite WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A8041AC276085BF006844D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8041AB276085BF006844D7 /* Assets.xcassets */; };
+		0A8041B2276085C0006844D7 /* Kalendae Lite WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A8041B1276085C0006844D7 /* Kalendae Lite WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A8041B7276085C0006844D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8041B6276085C0006844D7 /* ContentView.swift */; };
+		0A8041B9276085C0006844D7 /* Kalendae_LiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8041B8276085C0006844D7 /* Kalendae_LiteApp.swift */; };
+		0A8041BB276085C0006844D7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8041BA276085C0006844D7 /* ComplicationController.swift */; };
+		0A8041BD276085C0006844D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8041BC276085C0006844D7 /* Assets.xcassets */; };
+		0A8041C0276085C0006844D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8041BF276085C0006844D7 /* Preview Assets.xcassets */; };
+		0A8041D027608630006844D7 /* KalendaeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8041CF27608630006844D7 /* KalendaeView.swift */; };
+		0A8041D327608730006844D7 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8041D227608730006844D7 /* MonthView.swift */; };
+		0A8041D527608F4B006844D7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8041D427608F4B006844D7 /* Helper.swift */; };
+		0A8041D727609486006844D7 /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8041D627609486006844D7 /* Week.swift */; };
+		0A8041DA27609495006844D7 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8041D927609495006844D7 /* Day.swift */; };
+		0A8041DC276094E3006844D7 /* MonthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8041DB276094E3006844D7 /* MonthViewModel.swift */; };
+		0A8041DF276095AF006844D7 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8041DE276095AF006844D7 /* Date.swift */; };
+		0ABB6BBE27640C9C00CB75AF /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB6BBD27640C9C00CB75AF /* CalendarManager.swift */; };
+		0ABB6BC0276423EF00CB75AF /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB6BBF276423EF00CB75AF /* DayView.swift */; };
+		0ABB6BC22764319A00CB75AF /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABB6BC12764319A00CB75AF /* EventView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A8041A8276085BF006844D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A80419C276085BF006844D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A8041A5276085BF006844D7;
+			remoteInfo = "Kalendae Lite WatchKit App";
+		};
+		0A8041B3276085C0006844D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A80419C276085BF006844D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A8041B0276085C0006844D7;
+			remoteInfo = "Kalendae Lite WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A8041C7276085C0006844D7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0A8041B2276085C0006844D7 /* Kalendae Lite WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A8041CB276085C0006844D7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0A8041A7276085BF006844D7 /* Kalendae Lite WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A8041A2276085BF006844D7 /* Kalendae Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kalendae Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8041A6276085BF006844D7 /* Kalendae Lite WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kalendae Lite WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8041AB276085BF006844D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A8041B1276085C0006844D7 /* Kalendae Lite WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Kalendae Lite WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8041B6276085C0006844D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A8041B8276085C0006844D7 /* Kalendae_LiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kalendae_LiteApp.swift; sourceTree = "<group>"; };
+		0A8041BA276085C0006844D7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		0A8041BC276085C0006844D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A8041BF276085C0006844D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A8041C1276085C0006844D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8041CF27608630006844D7 /* KalendaeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalendaeView.swift; sourceTree = "<group>"; };
+		0A8041D227608730006844D7 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		0A8041D427608F4B006844D7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		0A8041D627609486006844D7 /* Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
+		0A8041D927609495006844D7 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		0A8041DB276094E3006844D7 /* MonthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewModel.swift; sourceTree = "<group>"; };
+		0A8041DE276095AF006844D7 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		0ABB6BBD27640C9C00CB75AF /* CalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
+		0ABB6BBF276423EF00CB75AF /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		0ABB6BC12764319A00CB75AF /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A8041AE276085C0006844D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A80419B276085BF006844D7 = {
+			isa = PBXGroup;
+			children = (
+				0A8041AA276085BF006844D7 /* Kalendae Lite WatchKit App */,
+				0A8041B5276085C0006844D7 /* Kalendae Lite WatchKit Extension */,
+				0A8041A3276085BF006844D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A8041A3276085BF006844D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A8041A2276085BF006844D7 /* Kalendae Lite.app */,
+				0A8041A6276085BF006844D7 /* Kalendae Lite WatchKit App.app */,
+				0A8041B1276085C0006844D7 /* Kalendae Lite WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A8041AA276085BF006844D7 /* Kalendae Lite WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0A8041AB276085BF006844D7 /* Assets.xcassets */,
+			);
+			path = "Kalendae Lite WatchKit App";
+			sourceTree = "<group>";
+		};
+		0A8041B5276085C0006844D7 /* Kalendae Lite WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0A8041D127608643006844D7 /* Views */,
+				0A8041DD276094ED006844D7 /* View Models */,
+				0A8041D82760948A006844D7 /* Models */,
+				0A8041B8276085C0006844D7 /* Kalendae_LiteApp.swift */,
+				0A8041BA276085C0006844D7 /* ComplicationController.swift */,
+				0A8041D427608F4B006844D7 /* Helper.swift */,
+				0ABB6BBD27640C9C00CB75AF /* CalendarManager.swift */,
+				0A8041BC276085C0006844D7 /* Assets.xcassets */,
+				0A8041C1276085C0006844D7 /* Info.plist */,
+				0A8041BE276085C0006844D7 /* Preview Content */,
+				0A8041E0276095B6006844D7 /* Extensions */,
+			);
+			path = "Kalendae Lite WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		0A8041BE276085C0006844D7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0A8041BF276085C0006844D7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A8041D127608643006844D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A8041B6276085C0006844D7 /* ContentView.swift */,
+				0A8041CF27608630006844D7 /* KalendaeView.swift */,
+				0A8041D227608730006844D7 /* MonthView.swift */,
+				0ABB6BBF276423EF00CB75AF /* DayView.swift */,
+				0ABB6BC12764319A00CB75AF /* EventView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A8041D82760948A006844D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A8041D627609486006844D7 /* Week.swift */,
+				0A8041D927609495006844D7 /* Day.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A8041DD276094ED006844D7 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A8041DB276094E3006844D7 /* MonthViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		0A8041E0276095B6006844D7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A8041DE276095AF006844D7 /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A8041A1276085BF006844D7 /* Kalendae Lite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A8041CC276085C0006844D7 /* Build configuration list for PBXNativeTarget "Kalendae Lite" */;
+			buildPhases = (
+				0A8041A0276085BF006844D7 /* Resources */,
+				0A8041CB276085C0006844D7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A8041A9276085BF006844D7 /* PBXTargetDependency */,
+			);
+			name = "Kalendae Lite";
+			productName = "Kalendae Lite";
+			productReference = 0A8041A2276085BF006844D7 /* Kalendae Lite.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		0A8041A5276085BF006844D7 /* Kalendae Lite WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A8041C8276085C0006844D7 /* Build configuration list for PBXNativeTarget "Kalendae Lite WatchKit App" */;
+			buildPhases = (
+				0A8041A4276085BF006844D7 /* Resources */,
+				0A8041C7276085C0006844D7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A8041B4276085C0006844D7 /* PBXTargetDependency */,
+			);
+			name = "Kalendae Lite WatchKit App";
+			productName = "Kalendae Lite WatchKit App";
+			productReference = 0A8041A6276085BF006844D7 /* Kalendae Lite WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0A8041B0276085C0006844D7 /* Kalendae Lite WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A8041C4276085C0006844D7 /* Build configuration list for PBXNativeTarget "Kalendae Lite WatchKit Extension" */;
+			buildPhases = (
+				0A8041AD276085C0006844D7 /* Sources */,
+				0A8041AE276085C0006844D7 /* Frameworks */,
+				0A8041AF276085C0006844D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kalendae Lite WatchKit Extension";
+			productName = "Kalendae Lite WatchKit Extension";
+			productReference = 0A8041B1276085C0006844D7 /* Kalendae Lite WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A80419C276085BF006844D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					0A8041A1276085BF006844D7 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					0A8041A5276085BF006844D7 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					0A8041B0276085C0006844D7 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 0A80419F276085BF006844D7 /* Build configuration list for PBXProject "Kalendae Lite" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A80419B276085BF006844D7;
+			productRefGroup = 0A8041A3276085BF006844D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A8041A1276085BF006844D7 /* Kalendae Lite */,
+				0A8041A5276085BF006844D7 /* Kalendae Lite WatchKit App */,
+				0A8041B0276085C0006844D7 /* Kalendae Lite WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A8041A0276085BF006844D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A8041A4276085BF006844D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8041AC276085BF006844D7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A8041AF276085C0006844D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8041C0276085C0006844D7 /* Preview Assets.xcassets in Resources */,
+				0A8041BD276085C0006844D7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A8041AD276085C0006844D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8041B9276085C0006844D7 /* Kalendae_LiteApp.swift in Sources */,
+				0ABB6BC0276423EF00CB75AF /* DayView.swift in Sources */,
+				0ABB6BC22764319A00CB75AF /* EventView.swift in Sources */,
+				0A8041DF276095AF006844D7 /* Date.swift in Sources */,
+				0A8041D327608730006844D7 /* MonthView.swift in Sources */,
+				0A8041DA27609495006844D7 /* Day.swift in Sources */,
+				0A8041D727609486006844D7 /* Week.swift in Sources */,
+				0ABB6BBE27640C9C00CB75AF /* CalendarManager.swift in Sources */,
+				0A8041DC276094E3006844D7 /* MonthViewModel.swift in Sources */,
+				0A8041D027608630006844D7 /* KalendaeView.swift in Sources */,
+				0A8041B7276085C0006844D7 /* ContentView.swift in Sources */,
+				0A8041BB276085C0006844D7 /* ComplicationController.swift in Sources */,
+				0A8041D527608F4B006844D7 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A8041A9276085BF006844D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A8041A5276085BF006844D7 /* Kalendae Lite WatchKit App */;
+			targetProxy = 0A8041A8276085BF006844D7 /* PBXContainerItemProxy */;
+		};
+		0A8041B4276085C0006844D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A8041B0276085C0006844D7 /* Kalendae Lite WatchKit Extension */;
+			targetProxy = 0A8041B3276085C0006844D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A8041C2276085C0006844D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A8041C3276085C0006844D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A8041C5276085C0006844D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kalendae Lite WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = RB73R3H3RF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kalendae Lite WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Kalendae Lite";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Kalendae_Lite_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinguan.Kalendae-Lite.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		0A8041C6276085C0006844D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kalendae Lite WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = RB73R3H3RF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kalendae Lite WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Kalendae Lite";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Kalendae_Lite_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinguan.Kalendae-Lite.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		0A8041C9276085C0006844D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RB73R3H3RF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Kalendae_Lite_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kalendae Lite";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinguan.Kalendae-Lite.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		0A8041CA276085C0006844D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RB73R3H3RF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Kalendae_Lite_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kalendae Lite";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinguan.Kalendae-Lite.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		0A8041CD276085C0006844D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RB73R3H3RF;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinguan.Kalendae-Lite";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0A8041CE276085C0006844D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RB73R3H3RF;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinguan.Kalendae-Lite";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A80419F276085BF006844D7 /* Build configuration list for PBXProject "Kalendae Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8041C2276085C0006844D7 /* Debug */,
+				0A8041C3276085C0006844D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A8041C4276085C0006844D7 /* Build configuration list for PBXNativeTarget "Kalendae Lite WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8041C5276085C0006844D7 /* Debug */,
+				0A8041C6276085C0006844D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A8041C8276085C0006844D7 /* Build configuration list for PBXNativeTarget "Kalendae Lite WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8041C9276085C0006844D7 /* Debug */,
+				0A8041CA276085C0006844D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A8041CC276085C0006844D7 /* Build configuration list for PBXNativeTarget "Kalendae Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8041CD276085C0006844D7 /* Debug */,
+				0A8041CE276085C0006844D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A80419C276085BF006844D7 /* Project object */;
+}
